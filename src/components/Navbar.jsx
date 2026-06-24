@@ -17,7 +17,7 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-8 font-semibold">
-            {["Home", "About", "Portfolio", "Contact", "Team"].map((item) => (
+            {["Home", "About", "Services", "Contact", "Team"].map((item) => (
               <Link
                 key={item}
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
