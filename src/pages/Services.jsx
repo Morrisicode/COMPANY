@@ -1,7 +1,13 @@
 import React from "react";
-
-function Services() {
-  return <div></div>;
+import ProjectsGrid from "../components/projects/ProjectsGrid";
+import Footer from "../components/Footer";
+function Portfolio() {
+  return (
+    <main className="min-h-screen bg-black">
+      <ProjectsGrid />
+      <Footer />
+    </main>
+  );
 }
 
-export default Services;
+export default Portfolio;
