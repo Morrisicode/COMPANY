@@ -37,7 +37,7 @@ function FeaturedProjects() {
 
       <div className="mt-10 items-center text-center">
         <Link
-          to="/portfolio"
+          to="/services"
           className="w-fit  rounded-full border border-white/20 px-6 py-3 text-sm font-medium transition hover:bg-orange-500 hover:text-white"
         >
           View All Projects

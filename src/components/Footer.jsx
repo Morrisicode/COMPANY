@@ -49,7 +49,7 @@ function Footer() {
             <li className="flex items-center gap-2">
               <FiPhone />
               <a className="hover:text-cyan-400" href="tel:+231770000000">
-                +231 770 000 000
+                +231 889 552 016
               </a>
             </li>
             <li className="flex items-center gap-2">
@@ -65,13 +65,17 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FiMail />
-              <span>info@svl.com</span>
+              <a href="softwarevalalibinc@gmail.com">
+                softwarevalalibinc@gmail.com
+              </a>
             </li>
           </ul>
         </div>
 
         <div className="z-10 pb-10">
-          <h3 className="text-orange-500 font-bold">Our Office</h3>
+          <h3 className="text-orange-500 font-bold" target="_blank">
+            Our Office
+          </h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <FiMapPin />
