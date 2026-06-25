@@ -4,7 +4,7 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const WHATSAPP_NUMBER = "231888636071";
-const EMAIL_ADDRESS = "softwarevalalibinc@gmail.com";
+const EMAIL_ADDRESS = "softwarevalaliberiainc@gmail.com";
 const EMAIL_SUBJECT = encodeURIComponent("Website inquiry");
 const EMAIL_BODY = encodeURIComponent(
   "Hi SVL,\n\nI'd like to learn more about your services.",
