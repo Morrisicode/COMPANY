@@ -5,8 +5,12 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const WHATSAPP_NUMBER = "231888636071";
 const EMAIL_ADDRESS = "softwarevalalibinc@gmail.com";
-const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=Hi%20SVL%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services.`;
-const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL_ADDRESS}`;
+const EMAIL_SUBJECT = encodeURIComponent("Website inquiry");
+const EMAIL_BODY = encodeURIComponent(
+  "Hi SVL,\n\nI'd like to learn more about your services.",
+);
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20SVL%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services.`;
+const mailtoUrl = `mailto:${EMAIL_ADDRESS}?subject=${EMAIL_SUBJECT}&body=${EMAIL_BODY}`;
 
 function Footer() {
   return (
@@ -67,12 +71,7 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FiMail />
-              <a
-                className="hover:text-cyan-400"
-                href={gmailComposeUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a className="hover:text-cyan-400" href={mailtoUrl}>
                 {EMAIL_ADDRESS}
               </a>
             </li>
