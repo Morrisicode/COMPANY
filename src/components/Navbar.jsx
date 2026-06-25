@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../images/logo.jpg";
+import Logo from "../images/Logo.jpg";
 import {
   AiOutlineClose,
   AiOutlineMenu,
