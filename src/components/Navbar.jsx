@@ -25,15 +25,17 @@ function Navbar() {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-8 font-semibold">
-            {["Home", "About", "Services", "Contact", "Team"].map((item) => (
-              <Link
-                key={item}
-                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${isDarkMode ? "text-white" : "text-slate-900"}`}
-              >
-                {item}
-              </Link>
-            ))}
+            {["Home", "About", "Services", "Projects", "Contact", "Team"].map(
+              (item) => (
+                <Link
+                  key={item}
+                  to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                  className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${isDarkMode ? "text-white" : "text-slate-900"}`}
+                >
+                  {item}
+                </Link>
+              ),
+            )}
           </nav>
 
           <div className="flex items-center gap-4">
