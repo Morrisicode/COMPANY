@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
-const WHATSAPP_NUMBER = "231770000000";
+const WHATSAPP_NUMBER = "231889552016";
+const EMAIL_ADDRESS = "softwarevalalibinc@gmail.com";
 const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=Hi%20SVL%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services.`;
+const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL_ADDRESS}`;
 
 function Footer() {
   return (
@@ -48,7 +50,7 @@ function Footer() {
           <ul className="mt-4 space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <FiPhone />
-              <a className="hover:text-cyan-400" href="tel:+231770000000">
+              <a className="hover:text-cyan-400" href="tel:+231889552016">
                 +231 889 552 016
               </a>
             </li>
@@ -65,8 +67,13 @@ function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FiMail />
-              <a href="softwarevalalibinc@gmail.com">
-                softwarevalalibinc@gmail.com
+              <a
+                className="hover:text-cyan-400"
+                href={gmailComposeUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {EMAIL_ADDRESS}
               </a>
             </li>
           </ul>
