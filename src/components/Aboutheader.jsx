@@ -19,9 +19,9 @@ function Aboutheader() {
             <span className="">Network Infra.</span>
           </div>
         </div>
-        <span className=" sm:hidden  text-2xl md:text-[3rem] text-white text-center flex justify-center  lg:block">
+        {/* <span className=" hidden  text-2xl md:text-[3rem] text-white text-center flex justify-center  lg:block">
           live in seconds&nbsp;
-        </span>
+        </span> */}
 
         <div className="block">
           <p className="text-center  text-white text-sm md:text-xl md:w-200 md:pt-5  mx-auto">
@@ -31,11 +31,11 @@ function Aboutheader() {
           <div className="absolute w-96 h-96 bg-cyan-500/20 blur-[120px] rounded-full "></div>
 
           {/* Buttons */}
-          <div className="mt-30 md:mt-0  gap-5 md:gap-0 flex flex-col md:flex-row  justify-between md:mx-10 lg:mx-70 mt-5  md:mt-20">
-            <button className="w-70 mx-auto text-white bg-orange-500 py-1 px-2 hover:cursor-pointer transition-all hover:scale-105 font-bold md:px-10 md:py-4 md:text-bold md:text-xl rounded">
+          <div className="mt-20 gap-10  md:gap-10 flex flex-col md:flex-row items-center justify-center md:mx-10    md:mt-20 text-white">
+            <button className=" bg-orange-500 w-full md:w-68 px-5 py-2 rounded-xl">
               Get Started
             </button>
-            <button className="w-70 mx-auto text-gray-400 rounded transition-all hover:scale-105 border border-white hover:cursor-pointer py-1 px-2  font-bold md:px-10 md:py-4 md:text-bold md:text-xl">
+            <button className="bg-transparent outline-2 w-full md:w-68 outline-gray-300 px-4 py-2 rounded-xl">
               View Projects
             </button>
           </div>

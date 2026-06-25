@@ -11,24 +11,32 @@ function Aboutus() {
         Software Vala Liberia
       </h1>
 
-      <p className="text-start pt-4 lg:pr-5 lg:mb-10 md:text-xl  ">
-        Software Vala Liberia is a registered software development agency in
-        Liberia committed to empowering businesses with innovative digital
-        solutions, we bring together a team of tech professionals dedicated to
-        delivering exceptional Website Design, Software Development, Graphic
-        Design, Web Hosting and Maintainance, Network Infrastructure, Digital
-        Marketing, CCTV Installation, Solar Energy Solutions ICT Supply and
-        Setup. <br /> <br />
+      <p className="text-start pt-4 lg:pr-5 lg:mb-10  px-5 ">
+        Software Vala Liberia is a leading global software company with a
+        growing footprint in Liberia. Our platform offers over 20 software
+        solutions both locally and internationally tailored to education,
+        finance, retail, and etc. We are proud of our commitment to delivering
+        high-quality software services at competitive, fixed prices. <br />{" "}
+        Software Development, Web Development, Web Hosting, Cloud Services,
+        Network Infrastructure, Digital marketing, Training & Support,
+        Cybersecurity Services, CCTV Installation, Graphic Design and Solar
+        Energy. <br /> <br />
         As a leading Software Development agency and web design agency in
-        Liberia, we understand that a great user experience is the cornerstone
-        of any successful website. That's why our services go beyond just design
-        — we offer web hosting, website maintenance, SEO, graphic design, social
-        media management and digital marketing solutions customized to meet your
-        business goals. Our mission is to bridge the technology gap in Liberia
-        and provide world-class software solutions to local businesses and
-        organizations. Our Mission is to be the leading and greatest trusted
-        provider of diverse software solutions in Liberia — committed to
-        quality, affordability, and digital transformation.
+        Liberia, Software Vala Liberia, Inc. began with a simple mission: to
+        bridge the technology gap in Liberia and provide world-class software
+        solutions to local businesses and organizations. And we use software
+        solutions to build solar energy system. Based in Paynesville, Monrovia,
+        Liberia, we understand the unique challenges and opportunities that come
+        with operating in Liberia's growing digital economy. Our team combines
+        international expertise with local knowledge to deliver solutions that
+        truly work for our clients. Today, we're proud to have helped over 2
+        businesses transform their operations through technology, from small
+        startups to established institutions across various sectors. Our mission
+        is to bridge the technology gap in Liberia and provide world-class
+        software solutions to local businesses and organizations. Our Mission is
+        to be the leading and greatest trusted provider of diverse software
+        solutions in Liberia — committed to quality, affordability, and digital
+        transformation.
       </p>
       <h1 className="text-center uppercase text-3xl font-bold pt-8 pb-5">
         {" "}

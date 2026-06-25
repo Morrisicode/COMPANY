@@ -1,7 +1,7 @@
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
-const WHATSAPP_NUMBER = "231770000000"; // Replace with the boss's actual WhatsApp number
-const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=Hi%20SVL%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services.`;
+const WHATSAPP_NUMBER = "231888636071";
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20SVL%2C%20I%27d%20like%20to%20learn%20more%20about%20your%20services.`;
 
 function WhatsAppFloating() {
   return (

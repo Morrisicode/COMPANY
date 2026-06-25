@@ -1,19 +1,27 @@
 import { Link } from "react-router-dom";
-import Logo from "../images/Final Logo copy.jpg";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Logo from "../images/logo.jpg";
+import {
+  AiOutlineClose,
+  AiOutlineMenu,
+  AiOutlineMoon,
+  AiOutlineSun,
+} from "react-icons/ai";
 import React, { useState } from "react";
 import Topbar from "./Topbar";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
     <>
       {/* <Topbar /> */}
-      <header className="bg-white shadow-lg sticky top-0 z-50">
+      <header
+        className={`sticky top-0 z-50 shadow-lg transition-colors duration-300 ${isDarkMode ? "bg-slate-950 text-white" : "bg-white text-slate-900"}`}
+      >
         <div className="w-[90%] mx-auto h-20 flex items-center justify-between">
           {/* Logo */}
-          <img src={Logo} alt="Logo" className="w-32 h-auto md:w-40  " />
+          <img src={Logo} alt="Logo" className="w-32 h-auto md:w-40" />
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-8 font-semibold">
@@ -21,23 +29,38 @@ function Navbar() {
               <Link
                 key={item}
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className="relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+                className={`relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full ${isDarkMode ? "text-white" : "text-slate-900"}`}
               >
                 {item}
               </Link>
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <div
-            className="md:hidden cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? (
-              <AiOutlineClose size={28} />
-            ) : (
-              <AiOutlineMenu size={28} />
-            )}
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              className={`rounded-full p-2 transition-colors duration-300 ${isDarkMode ? "bg-slate-700 text-white" : "bg-slate-200 text-slate-900"}`}
+              aria-label="Toggle dark mode"
+            >
+              {isDarkMode ? (
+                <AiOutlineSun size={20} />
+              ) : (
+                <AiOutlineMoon size={20} />
+              )}
+            </button>
+
+            {/* Mobile Menu Button */}
+            <div
+              className="md:hidden cursor-pointer"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? (
+                <AiOutlineClose size={28} />
+              ) : (
+                <AiOutlineMenu size={28} />
+              )}
+            </div>
           </div>
         </div>
 
